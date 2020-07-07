@@ -1,0 +1,26 @@
+Git
+
+1. git init
+2. Show staging area: git status
+3. Add file: git add <file name>
+4. Commit file: git commit -m 'update message'
+5. Check commits you made: git log
+6. Add all files in the current directory: git add .
+   '.' represents all the files in the current directory
+7. Working Directory (where you initialize your Git repository)
+	|
+	V
+   Stageing Area (after `git add`)
+	|
+	V
+   Local Repository (after commit)
+8. Check out differences between current and previous version
+   command: git diff <file name>
+	8.1 Roll Back
+	   git checkout <file name> ==> roll back to the last version of the specified file
+
+GitHub & Remote Repo
+1. git remote add origin <url>, here <url> is the remote repo (on github)
+2. git push -u origin master
+   Push local repo to reomote repo using the '-u' option
+   origin: Name of Remote; master: Name of Branch
